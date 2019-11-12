@@ -6,7 +6,7 @@ const {
 module.exports = async function (app) {
 	try {
 		const server = await app.listen(process.env.PORT);
-		log.info(`App is listening on port ${server.address().port}`);
+		log.info(`App is listneing on port ${server.address().port}`);
 	} catch (error) {
 		log.error(error.stack);
 		process.exit(1);
